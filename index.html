@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self';">
+    <title>Polizei Regelwerk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Zum Hauptinhalt springen</a>
+    
+    <header>
+        <div class="header-content">
+            <h1>Polizei Regelwerk</h1>
+            <p class="subtitle">Offizielle Dienstvorschriften und Verfahrensrichtlinien</p>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Suchen...">
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <nav class="tab-navigation" role="tablist">
+            <button class="tab-button active" role="tab" aria-selected="true" aria-controls="dienstregeln" id="tab-dienstregeln" tabindex="0">Dienstregeln</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="fahrzeuge" id="tab-fahrzeuge" tabindex="-1">Fahrzeuge</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="funkcodes" id="tab-funkcodes" tabindex="-1">Funkcodes</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="strafkatalog" id="tab-strafkatalog" tabindex="-1">Strafkatalog</button>
+            <button class="tab-button" role="tab" aria-selected="false" aria-controls="info" id="tab-info" tabindex="-1">Info</button>
+        </nav>
+
+        <div class="tab-content">
+            <div id="dienstregeln" class="tab-panel active" role="tabpanel" aria-labelledby="tab-dienstregeln">
+                <h2>§1 – Regeln im Dienst</h2>
+                <div class="intro-text">
+                    <p>Alle Beamten sind verpflichtet, sich an dieses Regelwerk zu halten. Es dient der Ordnung, Sicherheit und Professionalität im täglichen Polizeidienst. Zuwiderhandlungen werden disziplinarisch verfolgt.</p>
+                </div>
+                <ul class="rules-list">
+                    <li>Das Nichtnutzen wichtiger Funkcodes führt zu einer Dienstverwarnung.</li>
+                    <li>Alleine Streife fahren (als PM oder niedriger) ist verboten. Empfehlung: 2–3 Personen pro Streife.</li>
+                    <li>Ständiges Nachfragen nach Beförderungen führt zu einer Verwarnung.</li>
+                    <li>Respektloses Verhalten gegenüber Kollegen oder Zivilisten wird sanktioniert.</li>
+                    <li>Befehle höhergestellter Beamter sind zu befolgen, sofern rechtmäßig.</li>
+                    <li>Im Einsatz ist jederzeit professionelles Verhalten zu zeigen.</li>
+                    <li>Ausrüstung und Fahrzeuge sind nach Dienstende ordnungsgemäß abzugeben.</li>
+                </ul>
+            </div>
+
+            <div id="fahrzeuge" class="tab-panel" role="tabpanel" aria-labelledby="tab-fahrzeuge">
+                <h2>§2 – Fahrzeuge</h2>
+                <div class="vehicle-info">
+                    <h3>Fahrberechtigung</h3>
+                    <p><strong>PMA:</strong> nur als Beifahrer. Ab PM dürfen Dienstfahrzeuge gefahren werden.</p>
+                    
+                    <h3>Erlaubte Fahrzeuge</h3>
+                    <ul>
+                        <li>2015 Bullhorn Prancer Pursuit (ab PM)</li>
+                        <li>Falcon Interceptor Utility (ab PHM)</li>
+                    </ul>
+                    
+                    <h3>Wichtige Hinweise</h3>
+                    <p>Fahrzeuge sind pfleglich zu behandeln. Schäden sind unverzüglich zu melden. Unbefugte Nutzung führt zu Disziplinarmaßnahmen.</p>
+                </div>
+            </div>
+
+            <div id="funkcodes" class="tab-panel" role="tabpanel" aria-labelledby="tab-funkcodes">
+                <h2>§3 – Funkpflicht & Funkcodes</h2>
+                <table class="code-table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Bedeutung</th>
+                            <th>Beispiel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Code 0</strong></td>
+                            <td>PANIC – Sofortige Unterstützung</td>
+                            <td>Dienstnummer XYZ – Code 0 / ALPHA (PANIC)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 1</strong></td>
+                            <td>Anfahrt zum Einsatzort</td>
+                            <td>Dienstnummer XYZ – Code 1 / BRAVO (Anfahrt aktiv)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 2</strong></td>
+                            <td>Einsatz aktiv</td>
+                            <td>Dienstnummer XYZ – Code 2 / CHARLIE (Einsatz bestätigt)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 3</strong></td>
+                            <td>Verstärkung benötigt</td>
+                            <td>Dienstnummer XYZ – Code 3 / DELTA (Unterstützung anfordern)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 4</strong></td>
+                            <td>Einsatz beendet / Lage unter Kontrolle</td>
+                            <td>Dienstnummer XYZ – Code 4 / ECHO (Lage stabil)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 5</strong></td>
+                            <td>Pause / Dienstunterbrechung</td>
+                            <td>Dienstnummer XYZ – Code 5 / FOXTROT (Pause, 10 Min.)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 6</strong></td>
+                            <td>Transport einer Person</td>
+                            <td>Dienstnummer XYZ – Code 6 / GOLF (Person in Gewahrsam)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Code 7</strong></td>
+                            <td>Rückkehr zur Dienststelle</td>
+                            <td>Dienstnummer XYZ – Code 7 / HOTEL (Rückfahrt)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="strafkatalog" class="tab-panel" role="tabpanel" aria-labelledby="tab-strafkatalog">
+                <h2>§4 – Strafkatalog</h2>
+                <table class="penalty-table">
+                    <thead>
+                        <tr>
+                            <th>Straftat</th>
+                            <th>Strafe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fahren ohne Führerschein</td>
+                            <td>Haft 10 Min. + 2.000€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Rotlichtverstoß</td>
+                            <td>500€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Unfall / Fahrerflucht</td>
+                            <td>Haft 5 Min. + 1.500€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Körperverletzung</td>
+                            <td>Haft 10 Min. + 1.000€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Versuchter Mord</td>
+                            <td>Haft 25 Min. + 10.000€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Mord</td>
+                            <td>Haft 35 Min. + 20.000€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Widerstand gegen Beamte</td>
+                            <td>Haft 15 Min. + 5.000€ Geldstrafe</td>
+                        </tr>
+                        <tr>
+                            <td>Sachbeschädigung / Vandalismus</td>
+                            <td>Haft 3 Min. + 500€ Geldstrafe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="info" class="tab-panel" role="tabpanel" aria-labelledby="tab-info">
+                <h2>Informationen</h2>
+                <div class="info-box">
+                    <h3>Gültigkeit</h3>
+                    <p>Dieses Regelwerk ist ab sofort gültig und für alle Beamten verbindlich.</p>
+                    
+                    <h3>Kontakt</h3>
+                    <p>Bei Fragen oder Unklarheiten wenden Sie sich an Loif.</p>
+                    
+                    <h3>Upload & Leserechte</h3>
+                    <p>Alle Beamten haben das Recht, dieses Regelwerk zu lesen und herunterzuladen. Änderungen werden über den offiziellen Kanal kommuniziert.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

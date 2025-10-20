@@ -164,11 +164,6 @@
             return;
         }
 
-        if (event.ctrlKey && event.key === 'u') {
-            event.preventDefault();
-            return;
-        }
-
         if (event.ctrlKey && event.shiftKey && (event.key === 'i' || event.key === 'j' || event.key === 'c')) {
             event.preventDefault();
             return;
